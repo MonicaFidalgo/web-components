@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Components</title>
+
+    <style>
+
+        h3 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Hello World</h3>
+
+    <user-card-without-shadow-dom name="John Doe"></user-card-without-shadow-dom>
+
+    <user-card-without-shadow-dom name="Jane Doe"></user-card-without-shadow-dom>
+
+    <user-card-with-shadow-dom name="batata" avatar="https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_567.jpg">
+        <div slot="email">batatadoce@gmail.com</div>
+    </user-card-with-shadow-dom>
+
+    <user-card-with-shadow-dom name="couve" avatar="https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_567.jpg">
+        <div slot="phone">5555-555</div>
+    </user-card-with-shadow-dom>
+    
+    <script src="userCard.js"></script>
+    <script src="userCardwithShadow.js"></script>
+</body>
+</html>
